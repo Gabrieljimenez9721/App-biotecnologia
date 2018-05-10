@@ -1,0 +1,70 @@
+page-ordenar{
+
+    .order{
+        font-family: "Poppins", sans-serif;
+    }
+
+    .icono{
+        margin-left: 5px;
+    }
+    input[type=button], input[type=submit], input[type=reset]  {
+    background-color: #27DE55;
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 15px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(54, 151, 41,0.4);
+    box-shadow: 0 10px 30px 0 rgba(54, 151, 41,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    }
+
+    input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+        background-color: #27DE55;
+    }
+
+    input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+        -moz-transform: scale(0.95);
+        -webkit-transform: scale(0.95);
+        -o-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        transform: scale(0.95);
+    }
+}
+
+.gu-mirror{
+    position:fixed!important;
+    margin:0!important;
+    z-index:9999!important;
+    opacity:.8;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter:alpha(opacity=80)
+ }
+ 
+ .gu-hide{
+     display:none!important
+ }
+ 
+ .gu-unselectable{
+    -webkit-user-select:none!important;
+    -moz-user-select:none!important;
+    -ms-user-select:none!important;
+    user-select:none!important
+ }
+ 
+ .gu-transit{
+    opacity:.2;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter:alpha(opacity=20)
+ }

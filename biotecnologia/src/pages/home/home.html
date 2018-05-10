@@ -1,0 +1,37 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/imgs/logos.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div> 
+<ion-header>
+  <ion-navbar class="bar-positive" align-title="center" color="secondary">
+    <ion-title class="text-header">
+      <h3>BIOTECONOLOGIA</h3>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active"> Ingreso </h2>
+    <h2 class="inactive underlineHover" (click)="registro()">Registro</h2>
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="assets/imgs/intro.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form [formGroup]="loginForm">
+      <input type="email" [(ngModel)]="user.email" id="email" class="fadeIn second" name="email" placeholder="correo" formControlName="email">
+      <input type="password" [(ngModel)]="user.password" id="password" class="fadeIn third" name="password" placeholder="contraseña" formControlName="password">
+      <input type="submit" [disabled]="!loginForm.valid" (click)="ingreso(user)" class="fadeIn fourth" value="Ingresar">
+    </form>
+    
+  </div>
+</div>
+</body>

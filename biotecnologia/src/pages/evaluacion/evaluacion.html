@@ -1,0 +1,221 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Evaluación</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+      <div class="content-all">
+      <ion-card class="content-card" *ngIf="evaluations1">
+        {{evaluations1.pregunta}}
+        <br> 
+        <label class="container">{{evaluations1.op1}}
+        <input type="radio" id="1" value="1" name="radio_a">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations1.op2}}
+        <input type="radio" id="2" value="2" name="radio_a">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations1.op3}}
+        <input type="radio" id="3" value="3" name="radio_a">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations1.op4}}
+        <input type="radio" id="4" value="4" name="radio_a">
+        <span class="checkmark"></span>
+        </label>
+        <input type="hidden" id="r1" value='{{evaluations1.rta}}' checked>
+      </ion-card>
+      <ion-card class="content-card" *ngIf="evaluations2">
+        {{evaluations2.pregunta}}
+        <br> 
+        <label class="container">{{evaluations2.op1}}
+        <input type="radio" id="5" value="1" name="radio_b">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations2.op2}}
+        <input type="radio" id="6" value="2" name="radio_b">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations2.op3}}
+        <input type="radio" id="7" value="3" name="radio_b">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations2.op4}}
+        <input type="radio" id="8" value="4" name="radio_b">
+        <span class="checkmark"></span>
+        </label>
+        <input type="hidden" id="r2" value='{{evaluations2.rta}}' checked>
+      </ion-card>
+      <ion-card class="content-card" *ngIf="evaluations3">
+        {{evaluations3.pregunta}}
+        <br> 
+        <label class="container">{{evaluations3.op1}}
+        <input type="radio" id="9" value="1" name="radio_c">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations3.op2}}
+        <input type="radio" id="10" value="2" name="radio_c">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations3.op3}}
+        <input type="radio" id="11" value="3" name="radio_c">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations3.op4}}
+        <input type="radio" id="12" value="4" name="radio_c">
+        <span class="checkmark"></span>
+        </label>
+        <input type="hidden" id="r3" value='{{evaluations3.rta}}' checked>
+      </ion-card>
+      <ion-card class="content-card" *ngIf="evaluations4">
+        {{evaluations4.pregunta}}
+        <br> 
+        <label class="container">{{evaluations4.op1}}
+        <input type="radio" id="13" value="1" name="radio_d">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations4.op2}}
+        <input type="radio" id="14" value="2" name="radio_d">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations4.op3}}
+        <input type="radio" id="15" value="3" name="radio_d">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations4.op4}}
+        <input type="radio" id="16" value="4" name="radio_d">
+        <span class="checkmark"></span>
+        </label>
+        <input type="hidden" id="r4" value='{{evaluations4.rta}}' checked>
+      </ion-card>
+      <ion-card class="content-card" *ngIf="evaluations5">
+        {{evaluations5.pregunta}}
+        <br> 
+        <label class="container">{{evaluations5.op1}}
+        <input type="radio" id="17" value="1" name="radio_e">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations5.op2}}
+        <input type="radio" id="18" value="2" name="radio_e">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations5.op3}}
+        <input type="radio" id="19" value="3" name="radio_e">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations5.op4}}
+        <input type="radio" id="20" value="4" name="radio_e">
+        <span class="checkmark"></span>
+        </label>
+        <input type="hidden" id="r5" value='{{evaluations5.rta}}' checked>
+      </ion-card>
+      <ion-card class="content-card" *ngIf="evaluations6">
+        {{evaluations6.pregunta}}
+        <br> 
+        <label class="container">{{evaluations6.op1}}
+        <input type="radio" id="21" value="1" name="radio_f">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations6.op2}}
+        <input type="radio" id="22" value="2" name="radio_f">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations6.op3}}
+        <input type="radio" id="23" value="3" name="radio_f">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations6.op4}}
+        <input type="radio" id="24" value="4" name="radio_f">
+        <span class="checkmark"></span>
+        </label>
+        <input type="hidden" id="r6" value='{{evaluations6.rta}}' checked>
+      </ion-card>
+      <ion-card class="content-card" *ngIf="evaluations7">
+        {{evaluations7.pregunta}}
+        <br> 
+        <label class="container">{{evaluations7.op1}}
+        <input type="radio" id="25" value="1" name="radio_g">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations7.op2}}
+        <input type="radio" id="26" value="2" name="radio_g">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations7.op3}}
+        <input type="radio" id="27" value="3" name="radio_g">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations7.op4}}
+        <input type="radio" id="28" value="4" name="radio_g">
+        <span class="checkmark"></span>
+        </label>
+        <input type="hidden" id="r7" value='{{evaluations7.rta}}' checked>
+      </ion-card>
+      <ion-card class="content-card" *ngIf="evaluations8">
+        {{evaluations8.pregunta}}
+        <br> 
+        <label class="container">{{evaluations8.op1}}
+        <input type="radio" id="29" value="1" name="radio_h">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations8.op2}}
+        <input type="radio" id="30" value="2" name="radio_h">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations8.op3}}
+        <input type="radio" id="31" value="3" name="radio_h">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations8.op4}}
+        <input type="radio" id="32" value="4" name="radio_h">
+        <span class="checkmark"></span>
+        </label>
+        <input type="hidden" id="r8" value='{{evaluations8.rta}}' checked>
+      </ion-card>
+      <ion-card class="content-card" *ngIf="evaluations9">
+        {{evaluations9.pregunta}}
+        <br> 
+        <label class="container">{{evaluations9.op1}}
+        <input type="radio" id="33" value="1" name="radio_i">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations9.op2}}
+        <input type="radio" id="34" value="2" name="radio_i">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations9.op3}}
+        <input type="radio" id="35" value="3" name="radio_i">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations9.op4}}
+        <input type="radio" id="36" value="4" name="radio_i">
+        <span class="checkmark"></span>
+        </label>
+        <input type="hidden" id="r9" value='{{evaluations9.rta}}' checked>
+      </ion-card>
+      <ion-card class="content-card" *ngIf="evaluations10">
+        {{evaluations10.pregunta}}
+        <br> 
+        <label class="container">{{evaluations10.op1}}
+        <input type="radio" id="37" value="1" name="radio_j">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations10.op2}}
+        <input type="radio" id="38" value="2" name="radio_j">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations10.op3}}
+        <input type="radio" id="39" value="3" name="radio_j">
+        <span class="checkmark"></span>
+        </label><br>
+        <label class="container">{{evaluations10.op4}}
+        <input type="radio" id="40" value="4" name="radio_j">
+        <span class="checkmark"></span>
+        </label>
+        <input type="hidden" id="r10" value='{{evaluations10.rta}}' checked>
+      </ion-card>
+      <input type="submit" (click)="finalizar()" value="Calificar">
+      </div> 
+</ion-content>

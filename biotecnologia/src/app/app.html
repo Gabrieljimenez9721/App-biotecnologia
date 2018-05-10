@@ -1,0 +1,20 @@
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-navbar color="secondary">
+            
+        </ion-navbar>
+    </ion-header>
+
+    <ion-content>
+        <br>
+        <ion-item class="estilo" *ngFor="let d of acercade; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+            <h3 align="center">
+                {{d.title}}
+                <ion-icon  item-right [name]="isGroupShown(i)"></ion-icon>
+            </h3>
+            <div *ngIf="isGroupShown(i)">{{d.description}}</div>
+        </ion-item>
+    </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content></ion-nav>

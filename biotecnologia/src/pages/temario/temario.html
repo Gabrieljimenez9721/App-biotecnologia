@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-buttons start>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title><h3>Unidades</h3></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>  
+
+  <div class="card-list" *ngFor="let item of unidades | async">
+    <ion-card>
+      <div class="title-card">{{item.titulo}}</div>
+        <div class="content-card">
+          {{item.descripcion}}
+          <div class="button-content" (click)="seccion(item.id)">
+            Explorar <ion-icon class="circle" name="arrow-dropright-circle"></ion-icon>
+          </div>
+        </div>  
+    </ion-card>
+  </div>
+  
+</ion-content>
+
+<!--<MARQUEE SCROLLDELAY =200 hspace="50%">{{item.nombre}}</MARQUEE>-->

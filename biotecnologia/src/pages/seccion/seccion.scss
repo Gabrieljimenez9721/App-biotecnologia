@@ -1,0 +1,109 @@
+page-seccion {
+    .imagen{
+        position: relative;
+        width:45%;
+        height:auto;
+    }
+    .texto{
+        position: absolute;
+        font-weight: bold;
+        font-size: 1.2em;
+        top: 2px;
+        left: 53%;
+        padding-top: 0px;
+    }
+    .actividad{
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        background-color:#ACF3FD;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        height:auto;
+        border: 2px solid #3DE4FC;
+    }
+    .cont-activi{
+        text-align: center;
+        position: absolute;
+        font-size: 1.1em;
+        padding-left: 3px;
+        padding-top: 1px; 
+        width: auto;
+        height: auto;
+        top: 30%;
+        left: 50%;
+    }
+    .text-activi1{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border: 0.5px solid #4e4e4e;
+        box-shadow: inset 0 0 6px 3px #3DE4FC;
+        border-radius: 5px;
+        margin-bottom: 1px;
+    }
+    .text-activi2{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border: 0.5px solid #4e4e4e;
+        box-shadow: inset 0 0 6px 3px #3DE4FC;
+        border-radius: 5px;
+        margin-bottom: 1px;
+    }
+    .text-activi3{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border: 0.5px solid #4e4e4e;
+        box-shadow: inset 0 0 6px 3px #3DE4FC;
+        border-radius: 5px;
+    }
+    .evaluacion{
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        background-color:#FF9999;
+        height:auto;
+        border: 2px solid #FF5C5C;
+    }
+    .text-evalu{
+        position: absolute;
+        font-size: 1.1em; 
+        width: auto;
+        height: auto;
+        top: 35%;
+        left: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border: 0.5px solid #4e4e4e;
+        box-shadow: inset 0 0 6px 3px #FF5C5C;
+        border-radius: 5px;
+    }
+    .teoria{
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        background-color:#A3FEBA;
+        height:auto;
+        border: 2px solid #4BFE78;
+    }
+    .text-teo{
+        position: absolute;
+        font-size: 1.1em; 
+        width: auto;
+        height: auto;
+        top: 35%;
+        left: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border: 0.5px solid #4e4e4e;
+        box-shadow: inset 0 0 6px 3px #4BFE78;
+        border-radius: 5px;
+    }
+    
+}

@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar class="bar-positive" align-title="center" color="secondary">
+      <ion-title>
+        <h3>BIOTECONOLOGIA</h3>
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+<body>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="inactive underlineHover" (click)="ingreso()"> Ingreso </h2>
+      <h2 class="active">Registro</h2>
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="assets/imgs/intro.png" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form [formGroup]="registroForm">
+        <input type="email" [(ngModel)]="user.email" id="email" class="fadeIn second" name="email" placeholder="correo" formControlName="email">
+        <input type="password" [(ngModel)]="user.password" id="password" class="fadeIn third" name="password" placeholder="contraseña" formControlName="password">
+        <input type="submit" [disabled]="!registroForm.valid" (click)="registro(user)" class="fadeIn fourth" value="Registrarse">
+      <p class="alert">NOTA: La contraseña debe tener 6 caracteres y al menos 1 número</p>
+    </form>
+      
+    </div>
+  </div>
+</body>  

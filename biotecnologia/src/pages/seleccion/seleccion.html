@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Selección</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div align="center" *ngFor="let sel of selecciones | async">
+    <ion-item>
+      <ion-label floating>{{sel.pregunta}}</ion-label>
+      <ion-select interface="alert" cancelText="Cancelar">
+        <ion-option>{{sel.op1}}</ion-option>
+        <ion-option>{{sel.op2}}</ion-option>
+        <ion-option>{{sel.op3}}</ion-option>
+        <ion-option>{{sel.op4}}</ion-option>
+      </ion-select>
+    </ion-item>
+  </div>
+  <input type="submit" (click)="finalizar()" value="Finalizar">
+</ion-content>

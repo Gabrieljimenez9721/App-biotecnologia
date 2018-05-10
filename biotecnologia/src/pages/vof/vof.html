@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Verdadero o Falso</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<body>
+  <form name="formulario">
+  <div class="content-all">
+    <div  *ngFor="let vof of vofs | async">
+      <ion-card class="content-card">
+          {{vof.pregunta}}
+          <br>
+          <label class="container">Verdadero
+            <input type="radio" value="v" name="radio{{vof.id}}">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Falso
+            <input type="radio" value="f" name="radio{{vof.id}}">
+            <span class="checkmark"></span>
+          </label>
+      </ion-card>
+    </div>
+    <input type="submit" (click)="finalizar()" value="Finalizar">
+  </div>
+  </form>
+</body>
+</ion-content>

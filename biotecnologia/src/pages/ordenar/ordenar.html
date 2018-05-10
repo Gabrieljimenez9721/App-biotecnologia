@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Ordenar</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngFor="let ordpre of pregunta | async">
+    <h5>
+    {{ordpre}}
+    </h5>
+  </div>
+    <ion-list
+     [dragula]='"first-bag"' [dragulaModel]='orde'>
+     <ion-item *ngFor="let orde of ordenar | async">
+       <ion-icon class="icono" name="menu">  {{ orde }}</ion-icon> 
+     </ion-item>
+  </ion-list>
+  <input type="submit" (click)="finalizar()" value="Finalizar">
+</ion-content>

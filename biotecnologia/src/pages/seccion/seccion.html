@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>Sección</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+    <ion-card>
+      <div class="actividad">
+        <div class="texto">Actividad</div>
+        <div class="imagen"><img src="assets/imgs/actividades.png"></div>
+        <div class="cont-activi">
+          <div class="text-activi1" (click)="seleccion()">Selección</div>
+          <div class="text-activi2" (click)="vof()">V o F</div>
+          <div class="text-activi3" (click)="ordenar()">Ordenar</div>
+        </div>
+      </div>
+    </ion-card>
+    <ion-card>
+      <div class="evaluacion">
+        <div class="texto">Evaluación</div>
+        <div class="imagen"><img src="assets/imgs/evaluacion.png"></div>
+        <div class="text-evalu" (click)="evaluacion()">Comenzar</div>
+      </div>
+    </ion-card>
+    <ion-card>
+      <div class="teoria">
+        <div class="texto">Teoria</div>
+        <div class="imagen"><img src="assets/imgs/teoria.png"></div>
+        <div class="text-teo" (click)="teoria()">Examinar</div>
+      </div>
+    </ion-card>
+</ion-content>

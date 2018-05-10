@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Teoria</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="card-list" *ngFor="let teo of teorias | async">
+    <ion-card>
+        <div class="content-card">
+          <div style="text-transform: uppercase; font-weight: bold">
+            {{teo.titulo}}
+          </div>
+          <br>
+          {{teo.texto}}
+        </div>      
+    </ion-card>
+  </div>
+</ion-content>
