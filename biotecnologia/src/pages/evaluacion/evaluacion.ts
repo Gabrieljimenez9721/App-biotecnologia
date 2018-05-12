@@ -260,13 +260,18 @@ export class EvaluacionPage implements OnInit{
           if((<HTMLInputElement>document.getElementById('r10')).checked){
             frta[9]=(<HTMLInputElement>document.getElementById('r10')).value;
           }
+          var preg=1;
+          var resp='Las preguntas: ';
           for(var i=0;i<10;i++){            
             if(rta[i]==frta[i]){
+              preg=i+1;
+              resp=resp+preg+', ';
               contador++;
             }
-          }         
+          }
+          resp=resp+'estuvieron correctas para un total de '+contador+' sobre 10';         
           let alert = this.alertCtrl.create({
-            subTitle: 'Obtuviste '+contador+' preguntas correctas de 10.',
+            subTitle: resp,
             buttons: ['Aceptar']
           });
           alert.present();

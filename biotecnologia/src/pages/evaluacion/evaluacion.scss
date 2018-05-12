@@ -18,7 +18,7 @@ page-evaluacion {
         /* The container */
     .container {
         position: relative;
-        padding-left: 25px;
+        padding-left: 1.4em;
     }
     
     /* Hide the browser's default radio button */
@@ -30,10 +30,10 @@ page-evaluacion {
     /* Create a custom radio button */
     .checkmark {
         position: absolute;
-        top: 0;
+        top: 2px;
         left: 0;
-        height: 20px;
-        width: 20px;
+        height: 18px;
+        width: 18px;
         background-color: rgb(231, 231, 231);
         border-radius: 50%;
     }
@@ -57,8 +57,8 @@ page-evaluacion {
     
     /* Style the indicator (dot/circle) */
     .container .checkmark:after {
-        top: 6px;
-        left: 6px;
+        top: 5px;
+        left: 5px;
         width: 8px;
         height: 8px;
         border-radius: 50%;
@@ -72,7 +72,6 @@ page-evaluacion {
         color: white;
         padding: 15px 70px;
         text-align: center;
-        text-decoration: none;
         display: inline-block;
         text-transform: uppercase;
         font-size: 13px;
