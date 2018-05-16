@@ -13,17 +13,18 @@ page-evaluacion {
         border: 2px solid  #3DE4FC;
         margin-left: 0px;
         margin-top: 0px;
-        padding-left: 5px;
+        padding-left: 3px;
+        padding-right: 5px; 
     }
         /* The container */
     .container {
         position: relative;
-        padding-left: 1.4em;
+        padding-left: 6px; 
     }
     
     /* Hide the browser's default radio button */
     .container input {
-        position: absolute;
+        position: relative;
         opacity: 0;
     }
     
